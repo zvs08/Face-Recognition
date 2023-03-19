@@ -27,7 +27,7 @@ The data for this project consists of the images, on each of them a human face d
 In the traditional machine learning framework, we'll split the data into three subsets, named as train, validation and test. The model will be trained on the first subset (which is typically the largest), the second will be used to prevent over-fitting of the model, and the test dataset is devoted for checking the performance of the model on new (unseen) data. 
 
 The distribution of the categories on the training dataset is shown below. It can be observed that except the 'Surprise' category, all other types are almost of the same size, between 3 and 4 thousands of images. Overall, the distribution of classes can be considered as approximately balanced, i.e. there is no over-represented or under-represented class.
-![Distribution of target categories](download (4).png)
+![Distribution of target categories](dist.png)
 # Modeling approach
 
 For the described classification problem task the Convolutional Neural Network seems to be a good choice for several reasons:
