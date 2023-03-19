@@ -32,6 +32,14 @@ The distribution of the categories on the training dataset is shown below. It ca
 
 For the described classification problem task the Convolutional Neural Network seems to be a good choice for several reasons:
 
-1) Feature space of the data is quite high-dimensional, that's why more complex models such as networks are favorable
+  1) Feature space of the data is quite high-dimensional, that's why more complex models such as networks are favorable
 
-2) A single observation, an image, represents the unstructured type of information. The best approach existing so far for dealing with images are the CNN, that's why they were chosen here.
+  2) A single observation, an image, represents the unstructured type of information. The best approach existing so far for dealing with images are the CNN, that's why they were chosen here.
+
+There are two major approaches would be done for this particular project:
+
+  1) **Transfer learning** approach: take one of the well-known architecture of computer vision network, such as VGG, ResNet or EfficientNet, whose weights are already trained, add some extra layers and train the obtained network with fixed weights of the original base network
+
+  2) Create manually CNN, by experimenting with number and structure of convolutional blocks.
+
+Since we have a multi-classification task, suitable metric for the model is *accuracy*, which is the ratio of corrected predictions over all of the predictions.
